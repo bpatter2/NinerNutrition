@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+
+<link rel ="stylesheet" type= "text/css" href = "css/new_activity.css">
+<p>
+  <strong>Title:</strong>
+  <%= @activity.title %>
+  <br>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @activity.duration %>
+  <br>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @activity.location %>
+  <br>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @activity.description %>
+  <br>
+</p>
+
+
+<%= link_to 'Edit', edit_activity_path(@activity) %> |
+<%= link_to 'Back', activities_path %>

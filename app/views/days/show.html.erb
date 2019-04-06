@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+
+<link rel ="stylesheet" type= "text/css" href = "css/new_activity.css">
+<p>
+  <strong>Title:</strong>
+  <%= @day.title %>
+  <br>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @day.text %>
+  <br>
+</p>
+
+
+<%= link_to 'Edit', edit_day_path(@day) %> |
+<%= link_to 'Back', days_path %>
