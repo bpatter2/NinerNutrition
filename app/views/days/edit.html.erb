@@ -1,6 +1,9 @@
-<h1>Editing Day</h1>
+<h1>Edit Day</h1>
+<link rel ="stylesheet" type= "text/css" href = "css/homepage.css">
 
-<%= render 'form', day: @day %>
+<%= form_with model: @day do |form| %>
+<p>Title: <%=form.text_field :title %></p>
+<p>Text:  <%= form.text_field :text %></p>
+<%= form.submit %>
 
-<%= link_to 'Show', @day %> |
-<%= link_to 'Back', days_path %>
+<% end %>
