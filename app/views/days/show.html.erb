@@ -1,21 +1,14 @@
-
-<link rel ="stylesheet" type= "text/css" href = "css/new_event.css">
-<%= link_to 'Edit', edit_day_path(@day) %>
-
-<div class="field">
 <p>
-  <strong>Title:</strong>
-  <%= @day.title %>
+    <strong>Title:</strong>
+    <%= @day.title %>
 </p>
- 
+
 <p>
-  <strong>Text:</strong>
-  <%= @day.text %>
+    <strong>Text:</strong>
+    <%= @day.text %>
 </p>
-</div>
+<%= link_to 'Day List', days_path %>
 
 
-
-<li><a href = "/days/:day_id/events/new" >Add An Event </a></li>
-<p><%= link_to 'Delete', @day, method: 'delete', data: {confirm: 'Are You Sure?'} %></p>
-<p><%= link_to 'Go Back To Days List', days_path %></p>
+<p><%= link_to 'Delete', @day, method: 'delete', data: { confirm: 'Are you sure?' }%></p>
+<p><%= link_to 'Go back to all days', days_path %></p>

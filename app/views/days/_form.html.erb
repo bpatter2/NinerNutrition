@@ -1,4 +1,21 @@
+<link rel ="stylesheet" type= "text/css" href = "css/new_activity.css">
 <%= form_for (@day) do |f| %>
+
+
+
+<% if @day.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@day.errors.count, "error") %> prohibited
+        this day from being saved:
+      </h2>
+      <ul>
+        <% @day.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
   <div class="field">
     <%= f.label :title %>
     <%= f.text_field :title %>

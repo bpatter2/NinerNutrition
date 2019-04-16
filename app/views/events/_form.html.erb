@@ -1,32 +1,33 @@
-<%=  @events.each do |form| %>
-  <% if event.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(event.errors.count, "error") %> prohibited this event from being saved:</h2>
+<link rel ="stylesheet" type= "text/css" href = "css/new_activity.css">
+<%= form_for (@event) do |f| %>
 
+
+
+<% if @event.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@event.errors.count, "error") %> prohibited
+        this event from being saved:
+      </h2>
       <ul>
-      <% event.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
+        <% @event.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
       </ul>
     </div>
   <% end %>
-
   <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
   </div>
 
   <div class="field">
-    <%= form.label :body %>
-    <%= form.text_field :body %>
+    <%= f.label :text %>
+    <%= f.text_area :text %>
   </div>
 
-  <div class="field">
-    <%= form.select :day_id, Day.all.map {|day| [day.to_s, day.id] } %>
-  </div>
-
-
+  <p>Day: <%= f.select :day_id, Day.all.map { |day| [ day.to_s, day.id ] } %></p>
   <div class="actions">
-    <%= form.submit %>
+    <%= f.submit %>
   </div>
 <% end %>

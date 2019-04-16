@@ -8,7 +8,7 @@
         <nav class ="nav">
             <ul class = "menu">
                 <li class="submenu_item"><a href = "/days/new" >Add A Day </a></li>
-                <li class="submenu_item"><a href = "/days" >Add An Event </a></li>
+                <li class="submenu_item"><a href = "/days/:day_id/events/new(.:format)" >Add An Event </a></li>
                 <li class ="menu_item"><a href= "#">Events</a>
                     <ul class ="submenu">
                        <li class="submenu_item"><%= link_to 'Go To Days List', days_path %></li>
