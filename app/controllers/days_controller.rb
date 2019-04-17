@@ -1,6 +1,12 @@
 class DaysController < ApplicationController
+<<<<<<< HEAD
+  
+  
+  
+=======
    before_action :current_owner, only: [:show, :edit, :update, :destroy]
    
+>>>>>>> 7ef7306c319485fb9b0a7641847971c46d7165bd
   def index
     @days = Day.all
   end
