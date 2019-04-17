@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  body: MyText
+  integer: 2019-04-14 21:45:55
+  day: one
+
+two:
+  title: MyString
+  body: MyText
+  integer: 2019-04-14 21:45:55
+  day: two

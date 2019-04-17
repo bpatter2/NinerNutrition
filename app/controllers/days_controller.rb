@@ -1,7 +1,12 @@
 class DaysController < ApplicationController
+<<<<<<< HEAD
   
   
   
+=======
+   before_action :current_owner, only: [:show, :edit, :update, :destroy]
+   
+>>>>>>> 7ef7306c319485fb9b0a7641847971c46d7165bd
   def index
     @days = Day.all
   end
@@ -19,38 +24,38 @@ class DaysController < ApplicationController
   
   
   def create
-    @day = Day.new(day_params)
+    @day = Day.create(day_params)
     if @day.save
-      redirect_to @day
+      redirect_to @day, alert: "Day created successfully."
     else
-      render "new"
+    redirect_to new_day_path, alert: "Error creating day"
     end
   end
 
 def edit
-  @day = Day.find(params[:id])
+  
 end
   
   
   def update
-    @day = Day.find(params[:id])
+    @day.update(day_params)
     
-    if @day.update(day_params)
-      redirect_to @day
-    else
-      render 'edit'
-    end
+    redirect_to day_path(@day)
   end
   
     def destroy
-      @day = Day.find(params[:id])
-      @day.destroy
-      redirect_to days_path
+     @day.destroy
+     redirect_to days_path
+    
     end
-end
 
   
   private
   def day_params
     params.require(:day).permit(:title, :text)
   end
+  
+  def current_owner
+    @day = Day.find(params[:id])
+  end
+end

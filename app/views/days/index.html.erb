@@ -16,8 +16,10 @@
       <tr>
         <td><%= day.title %></td>
         <td><%= day.text %></td>
-        <td><%= link_to 'Show', day %></td>
-        <td><%= link_to 'Edit', edit_day_path(day) %></td>
+        <td><%= link_to day.to_s, day_path(day) %></td>
+        <td><%= link_to 'Edit', edit_day_path(day) %></td> 
+        <td><a href = "/days/:day_id/events/new" >Add An Event </a></td>
+        
         <td><%= link_to 'Destroy', day, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
