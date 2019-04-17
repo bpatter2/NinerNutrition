@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  resources :days do
-    resources :events
-end
+  resources :days 
+  resources :events
   get 'homepage/index'
   root 'homepage#index'
 end
