@@ -7,11 +7,16 @@
     <body>
         <nav class ="nav">
             <ul class = "menu">
-                <li class="submenu_item"><a href = "/days/new" >Add A Day </a></li>
-                <li class="submenu_item"><a href = "/days" >Add An Event </a></li>
+                <li class ="menu_item"><a href= "#">Days</a>
+                    <ul class ="submenu">
+                        <li class="submenu_item"><%= link_to 'Create Day', new_day_path %></li>
+                        <li class="submenu_item"><%= link_to 'View Days', days_path %></li>
+                    </ul>
+                </li>
                 <li class ="menu_item"><a href= "#">Events</a>
                     <ul class ="submenu">
-                       <li class="submenu_item"><%= link_to 'Go To Days List', days_path %></li>
+                        <li class="submenu_item"><%= link_to 'Create Event', events_new_path %></li>
+                        <li class="submenu_item"><%= link_to 'View Events', events_index_url %></li>
                     </ul>
                 </li>
             </ul>

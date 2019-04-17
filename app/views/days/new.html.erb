@@ -1,17 +1,24 @@
-<h1>Add A New Day</h1>
+<h1>New Day</h1>
+<%= render 'form' %>
 
-<%= form_for (@day) do |f| %>
-  <div class="field">
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-  </div>
+<%= form_for :day, url:days_path do |f| %>
 
-  <div class="field">
-    <%= f.label :text %>
-    <%= f.text_area :text %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+<% if @day.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@day.errors.count, "error") %> prohibited
+        this day from being saved:
+      </h2>
+      <ul>
+        <% @day.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+    
+  <% end %>
+  
+  
 <% end %>
+
+<%= link_to 'Back', days_path %>
