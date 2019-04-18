@@ -27,7 +27,7 @@
   </div>
 
   <div class ="select">
-    <p>Day: <%= f.select :day_id, Day.all.map { |day| [ day.to_s, day.id ] } %></p>
+    <p>Day: <%= f.select :day_id, Day.all.map { |day| [ day.to_s] } %></p>
   </div>
     <div class="actions">
     <%= f.submit %>

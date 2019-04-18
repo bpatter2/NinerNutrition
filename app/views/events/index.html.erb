@@ -16,7 +16,7 @@
       <tr>
         <td><%= event.title %></td>
         <td><%= event.body %></td>
-        <td><%= event.day_id %></td>
+        <td><%= link_to event.day_id, days_path(@event) %></td>
         <td><%= link_to 'Show', event %></td>
         <td><%= link_to 'Edit', edit_event_path(event) %></td>
         <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>

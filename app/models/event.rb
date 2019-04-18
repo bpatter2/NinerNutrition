@@ -1,3 +1,3 @@
 class Event < ApplicationRecord
-  belongs_to :day
+  belongs_to :day, :optional => true
 end
