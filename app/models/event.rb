@@ -1,3 +1,3 @@
 class Event < ApplicationRecord
-   belongs_to :days
+  belongs_to :day
 end

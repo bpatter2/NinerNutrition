@@ -1,5 +1,5 @@
 <link rel ="stylesheet" type= "text/css" href = "css/new_activity.css">
-<%= form_for (events_new_path) do |f| %>
+<%= form_for (@event) do |f| %>
 
 
 
@@ -22,12 +22,14 @@
   </div>
 
   <div class="field">
-    <%= f.label :text %>
-    <%= f.text_area :text %>
+    <%= f.label :body %>
+    <%= f.text_field :body %>
   </div>
 
-  <p>Day: <%= f.select :day_id, Day.all.map { |day| [ day.to_s, day.id ] } %></p>
-  <div class="actions">
+  <div class ="select">
+    <p>Day: <%= f.select :day_id, Day.all.map { |day| [ day.to_s, day.id ] } %></p>
+  </div>
+    <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>

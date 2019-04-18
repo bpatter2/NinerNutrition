@@ -1,14 +1,31 @@
-<link rel ="stylesheet" type= "text/css" href = "css/new_activity.css">
-<h1>List of Events</h1>
-<ul><% @events.each do |event| %>
-  <li>
-   <tr>
-     <td><%= event.title %></td>
-     <td><%= event.text %></td>
-     <td><%= link_to 'Edit', edit_event_path(event) %></td>
-   </tr>
-  <% end %></li>
-</ul>
+<p id="notice"><%= notice %></p>
 
-<div><%= link_to 'Create Event', events_new_path %></div>
+<h1>List Of All Events</h1>
 
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th colspan="4"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @events.each do |event| %>
+      <tr>
+        <td><%= event.title %></td>
+        <td><%= event.body %></td>
+        <td><%= event.day_id %></td>
+        <td><%= link_to 'Show', event %></td>
+        <td><%= link_to 'Edit', edit_event_path(event) %></td>
+        <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Activity', new_event_path %>
+<a href= "https://8b198c22a6ad40ccab545e0e0d546bde.vfs.cloud9.us-east-2.amazonaws.com/">Homepage</a>
