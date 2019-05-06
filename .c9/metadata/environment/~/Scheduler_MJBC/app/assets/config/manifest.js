@@ -1,0 +1,1 @@
+{"filter":false,"title":"manifest.js","tooltip":"~/Scheduler_MJBC/app/assets/config/manifest.js","ace":{},"undoManager":{"mark":-1,"position":-1,"stack":[]},"timestamp":1555560578217,"hash":"66e5af4f6e9a15baef9d1ae0cc666b27acf13aba"}

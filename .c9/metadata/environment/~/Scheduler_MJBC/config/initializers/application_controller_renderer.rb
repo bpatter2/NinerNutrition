@@ -1,0 +1,1 @@
+{"filter":false,"title":"application_controller_renderer.rb","tooltip":"~/Scheduler_MJBC/config/initializers/application_controller_renderer.rb","ace":{},"undoManager":{"mark":-1,"position":-1,"stack":[]},"timestamp":1555560578221,"hash":"e9a8becb104c211a17f6485eb1552570b5924cd8"}

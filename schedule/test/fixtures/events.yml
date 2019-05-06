@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  task: MyString
+  explanation: MyString
+  year: 1
+  belongs_to: MyString
+  : 
+
+two:
+  task: MyString
+  explanation: MyString
+  year: 1
+  belongs_to: MyString
+  : 

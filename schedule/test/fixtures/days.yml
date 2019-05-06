@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  weekday: MyString
+  description: MyString
+  year: 1
+
+two:
+  weekday: MyString
+  description: MyString
+  year: 1

@@ -1,0 +1,1 @@
+{"filter":false,"title":"activity.rb","tooltip":"~/Scheduler_MJBC/app/models/activity.rb","ace":{},"undoManager":{"mark":-1,"position":-1,"stack":[]},"timestamp":1555560578217,"hash":"0f3f8d4735b0b33a00a04a8d77287bccc64428a9"}

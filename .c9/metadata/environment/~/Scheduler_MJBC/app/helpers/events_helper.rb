@@ -1,0 +1,1 @@
+{"filter":false,"title":"events_helper.rb","tooltip":"~/Scheduler_MJBC/app/helpers/events_helper.rb","ace":{},"undoManager":{"mark":-1,"position":-1,"stack":[]},"timestamp":1555560578217,"hash":"f704008b71fd2cdd74afeba04f895fe5694e32fc"}

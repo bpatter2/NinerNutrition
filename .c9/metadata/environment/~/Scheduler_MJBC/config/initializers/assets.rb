@@ -1,0 +1,1 @@
+{"filter":false,"title":"assets.rb","tooltip":"~/Scheduler_MJBC/config/initializers/assets.rb","ace":{},"undoManager":{"mark":-1,"position":-1,"stack":[]},"timestamp":1555560578221,"hash":"fd0d3cd2f2edff1318d6be4fe154021d9cc324fb"}

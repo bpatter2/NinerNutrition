@@ -1,0 +1,1 @@
+{"filter":false,"title":"devise.rb","tooltip":"~/Scheduler_MJBC/config/initializers/devise.rb","ace":{},"undoManager":{"mark":-1,"position":-1,"stack":[]},"timestamp":1556165585384,"hash":"d20075a71639e7f41b6c55959e7df57d37372365"}
